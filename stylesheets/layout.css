@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+ width: 100vw;
+ max-width: 1000px;
+ margin: 0 auto;
+ padding: 0 32px;
+
+ font-family: 'Manrope', sans-serif;
+ font-style: normal;
+}
+
+section {
+  margin-bottom: 104px;
+}
+
+h1 {
+  max-width: 616px;
+  margin-bottom: 44px;
+
+  letter-spacing: -0.02em;
+
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 42px;
+}
+
+p {
+  margin-bottom: 24px;
+
+  color: #000;
+
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+p:last-of-type {
+  margin-bottom: 0;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+
+  color: #6190FF;
+ }
+
+a:hover {
+  color: #6190FF;
+}
+
+
+/* Навигация */
+
+nav {
+  display: flex;
+
+  width: 936px;
+  margin: 16px 0 64px;
+
+  font-family: 'Manrope', sans-serif;
+
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+
+  align-items: baseline;
+}
+
+nav ul img {
+  width: 77px;
+  height: auto;
+  margin-right: 24px;
+}
+
+nav ul li a {
+  margin-right: 16px;
+
+  color: #000;
+
+  font-size: 16px;
+  line-height: 22px;
+}
+
+nav ul li a.active {
+  color: #6190FF;
+  border-bottom: 2px solid;
+}
+
+nav ul li a:hover {
+  color: #6190FF;
+}
+
+
+/* Введение */
+
+section img {
+  width: 100%;
+  margin-bottom: 44px;
+
+  border-radius: 12px;
+}
+
+section div {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.lead-text {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 616px;
+
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.lead-text p {
+  margin-bottom: 24px;
+
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.lead-text p:last-of-type {
+  margin-bottom: 0;
+}
+
+.factoid {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 216px;
+}
+
+.factoid img {
+  width: 216px;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+.factoid p {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.factoid p:first-of-type {
+  margin-bottom: 0;
+
+  font-weight: 800;
+}
+
+
+/* Овцы болеют гриппом, который не опасен для человека */
+
+.text-two-columns {
+  display: flex;
+
+  margin-bottom: 44px;
+}
+
+.basic-text {
+  display: flex;
+  flex-direction: column;
+
+  width: 456px;
+
+  justify-content: flex-start;
+}
+
+.basic-text:first-of-type {
+  margin-right: 24px;
+}
+
+.important-text {
+  width: 100%;
+  height: auto;
+
+  border-radius: 12px;
+  background: linear-gradient(180deg, #6190FF 0%, #BFE8FE 126.33%);
+}
+
+.important-text p {
+  padding: 32px 44px 64px 24px;
+
+  color: #fff;
+
+  font-size: 24px;
+  line-height: 34px;
+}
