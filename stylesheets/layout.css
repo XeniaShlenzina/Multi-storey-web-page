@@ -91,6 +91,10 @@ nav {
   color: #6190FF;
   border-bottom: 2px solid;
 }
+
+.company__phone__number {
+  align-self: flex-end;
+}
 /* Введение */
 
 .cover__image {
