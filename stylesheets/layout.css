@@ -16,6 +16,9 @@ body {
 }
 
 section {
+  display: flex;
+  flex-direction: column;
+
   margin-bottom: 104px;
 }
 
@@ -170,17 +173,13 @@ section div {
   margin-bottom: 44px;
 }
 
-.basic-text {
+.basic-text-two-columns {
   display: flex;
   flex-direction: column;
 
   width: 456px;
 
   justify-content: flex-start;
-}
-
-.basic-text:first-of-type {
-  margin-right: 24px;
 }
 
 .important-text {
@@ -198,4 +197,41 @@ section div {
 
   font-size: 24px;
   line-height: 34px;
+}
+
+
+/* Фермеры защищают поголовье от эпидемии */
+
+.basic-text {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 616px;
+}
+
+/* Футер */
+
+footer {
+  display: flex;
+
+  margin-top: 104px;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer div span:first-of-type {
+  margin-right: 77px;
+}
+
+footer div span:last-of-type {
+  margin-left: 24px;
+}
+
+footer .social-media img {
+  margin-right: 12px;
+}
+
+footer .social-media img:last-of-type {
+  margin-right: 0;
 }
