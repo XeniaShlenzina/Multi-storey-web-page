@@ -106,7 +106,7 @@ a {
 .menu__link.active {
   display: inline-block;
 
-  padding-bottom: 2px;
+  padding-bottom: 3px;
 
   cursor: default;
 
@@ -225,14 +225,12 @@ a {
 
 .social-media__item {
   margin-right: 12px;
-
-  border-radius: 0;
 }
 
 .social-media__item:last-of-type {
   margin-right: 0;
 }
 
-.social-media__item:hover {
-  color: #6190FF;
+.social-media__item img {
+  border-radius: 0;
 }
