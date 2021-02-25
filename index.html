@@ -3,37 +3,52 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ХТМЛ‑вёрстка многоэтажной веб‑страницы</title>
+  <title>Вязань. Овечий грипп — это не то, что вы думаете</title>
   <link rel="stylesheet" href="stylesheets/styles.css">
 </head>
 <body>
-  <nav>
-    <ul>
-      <img src="img/vyazan-logo.svg"/>
-      <li><a href="">Одежда</a></li>
-      <li><a href="">Домашний текстиль</a></li>
-      <li><a href="">О фабрике</a></li>
-      <li><a href="" class="active">Блог</a></li>
-    </ul>
-    <span>+7 900 123-45-76</span>
-  </nav>
-  <section>
-    <img src="img/cover-image.jpg" alt="Обложка статьи">
-    <div>
-      <div class="lead-text">
-        <p>
-          Штамм гриппа, которым болеют овцы, существует. Он не передается людям и умирает при правильной обработке шерсти. Даже если овечка заболела, пока ее шерсть превратится в свитер, все вирусы и бактерии успеют умереть
-        </p>
-        <p>
-          Мы попросили Умара Хасанова рассказать, почему не стоит бояться шерстяных вещей
-        </p>
+  <nav class="section">
+    <div class="container">
+      <div class="grid">
+        <ul class="grid__col grid__col_10 menu">
+          <img class="company__logo" src="img/vyazan-logo.svg"/>
+          <li><a class="menu__item" href="">Одежда</a></li>
+          <li><a class="menu__item" href="">Домашний текстиль</a></li>
+          <li><a class="menu__item" href="">О фабрике</a></li>
+          <li><a class="menu__item active" href="">Блог</a></li>
+        </ul>
+        <span class="grid__col grid__col_2 company__phone__number">+7 900 123-45-76</span>
       </div>
-      <div class="factoid">
-        <img src="img/umar-photo.jpg" alt="Портрет Умара Хасанова">
-        <p>Умар Хасанов</p>
-        <p>
-          Аллерголог, иммунолог. Работает в клинике доказательной медицины «Рассвет»
-        </p>
+    </div>
+  </nav>
+
+  <section class="section cover__image">
+    <div class="container">
+      <div class="grid">
+        <img class="grid__col grid__col_12" src="img/cover-image.jpg" alt="Обложка статьи">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid">
+          <div class="grid__col grid__col_8 lead-text">
+            <p>
+              Штамм гриппа, которым болеют овцы, существует. Он не передается людям и умирает при правильной обработке шерсти. Даже если овечка заболела, пока ее шерсть превратится в свитер, все вирусы и бактерии успеют умереть
+            </p>
+            <p>
+              Мы попросили Умара Хасанова рассказать, почему не стоит бояться шерстяных вещей
+            </p>
+          </div>
+
+          <div class="grid__col grid__col_3 grid__offset-col_1 factoid">
+            <img src="img/umar-photo.jpg" alt="Портрет Умара Хасанова">
+            <p>Умар Хасанов</p>
+            <p>
+              Аллерголог, иммунолог. Работает в клинике доказательной медицины «Рассвет»
+            </p>
+          </div>
       </div>
     </div>
   </section>

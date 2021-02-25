@@ -7,23 +7,13 @@
 
 body {
  width: 100vw;
- max-width: 1000px;
  margin: 0 auto;
- padding: 0 32px;
 
  font-family: 'Manrope', sans-serif;
  font-style: normal;
 }
 
-section {
-  display: flex;
-  flex-direction: column;
-
-  margin-bottom: 104px;
-}
-
 h1 {
-  max-width: 616px;
   margin-bottom: 44px;
 
   letter-spacing: -0.02em;
@@ -64,28 +54,26 @@ a:hover {
 nav {
   display: flex;
 
-  width: 936px;
   margin: 16px 0 64px;
 
   font-family: 'Manrope', sans-serif;
 
   align-items: baseline;
-  justify-content: space-between;
 }
 
-nav ul {
-  display: flex;
-
-  align-items: baseline;
-}
-
-nav ul img {
+.company__logo {
   width: 77px;
   height: auto;
   margin-right: 24px;
 }
 
-nav ul li a {
+.menu {
+  display: flex;
+
+  align-items: baseline;
+}
+
+.menu__item {
   margin-right: 16px;
 
   color: #000;
@@ -94,36 +82,38 @@ nav ul li a {
   line-height: 22px;
 }
 
-nav ul li a.active {
+.menu__item:hover {
+  color: #6190FF;
+}
+
+.menu__item.active {
+  display: inline-block;
+
+  padding-bottom: 2px;
+
+  cursor: default;
+
   color: #6190FF;
   border-bottom: 2px solid;
 }
 
-nav ul li a:hover {
-  color: #6190FF;
-}
+.company__phone__number {
+  display: flex;
 
+  align-items: baseline;
+}
 
 /* Введение */
 
-section img {
-  width: 100%;
+.cover__image {
   margin-bottom: 44px;
 
   border-radius: 12px;
 }
 
-section div {
-  display: flex;
-
-  justify-content: space-between;
-}
-
 .lead-text {
   display: flex;
   flex-direction: column;
-
-  max-width: 616px;
 
   align-items: flex-start;
   justify-content: flex-start;
@@ -143,12 +133,9 @@ section div {
 .factoid {
   display: flex;
   flex-direction: column;
-
-  max-width: 216px;
 }
 
 .factoid img {
-  width: 216px;
   height: auto;
   margin-bottom: 8px;
 }
@@ -177,8 +164,6 @@ section div {
   display: flex;
   flex-direction: column;
 
-  width: 456px;
-
   justify-content: flex-start;
 }
 
@@ -205,8 +190,6 @@ section div {
 .basic-text {
   display: flex;
   flex-direction: column;
-
-  max-width: 616px;
 }
 
 /* Футер */
