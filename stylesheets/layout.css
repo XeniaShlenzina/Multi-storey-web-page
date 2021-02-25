@@ -38,15 +38,10 @@ p:last-of-type {
 }
 
 a {
-  cursor: pointer;
   text-decoration: none;
 
-  color: #6190FF;
+  color: #000;
  }
-
-a:hover {
-  color: #6190FF;
-}
 
 /* Навигация */
 
@@ -56,14 +51,20 @@ nav {
   margin: 16px 0 64px;
 
   font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
 
   align-items: baseline;
 }
 
 .company__logo {
-  width: 77px;
-  height: auto;
   margin-right: 24px;
+
+  color: #6190FF;
+
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 26px;
 }
 
 .menu {
@@ -74,11 +75,6 @@ nav {
 
 .menu__item {
   margin-right: 16px;
-
-  color: #000;
-
-  font-size: 16px;
-  line-height: 22px;
 }
 
 .menu__item:hover {
@@ -95,11 +91,6 @@ nav {
   color: #6190FF;
   border-bottom: 2px solid;
 }
-
-.company__phone__number {
-  line-height: 22px;
-}
-
 /* Введение */
 
 .cover__image {
