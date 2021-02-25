@@ -13,6 +13,14 @@ body {
  font-style: normal;
 }
 
+section {
+  margin-bottom: 104px;
+}
+
+section:first-of-type {
+  margin-bottom: 44px;
+}
+
 h1 {
   margin-bottom: 44px;
 
@@ -43,9 +51,17 @@ a {
   color: #000;
  }
 
+ img {
+   width: 100%;
+   height: auto;
+
+   border-radius: 12px;
+ }
+
+
 /* Навигация */
 
-nav {
+.header__inner {
   display: flex;
 
   margin: 16px 0 64px;
@@ -57,7 +73,7 @@ nav {
   align-items: baseline;
 }
 
-.company__logo {
+.header__logo {
   margin-right: 24px;
 
   color: #6190FF;
@@ -68,20 +84,26 @@ nav {
 }
 
 .menu {
-  display: flex;
+  flex-grow: 1;
+}
 
-  align-items: baseline;
+.menu__list {
+  display: flex;
 }
 
 .menu__item {
   margin-right: 16px;
 }
 
-.menu__item:hover {
+.menu__item:last-of-type {
+  margin-right: 0;
+}
+
+.menu__link:hover {
   color: #6190FF;
 }
 
-.menu__item.active {
+.menu__link.active {
   display: inline-block;
 
   padding-bottom: 2px;
@@ -92,85 +114,60 @@ nav {
   border-bottom: 2px solid;
 }
 
-.company__phone__number {
-  align-self: flex-end;
-}
+
 /* Введение */
 
-.cover__image {
-  margin-bottom: 44px;
-
-  border-radius: 12px;
-}
-
-.lead-text {
+.text__lead {
   display: flex;
   flex-direction: column;
-
-  align-items: flex-start;
-  justify-content: flex-start;
 }
 
-.lead-text p {
-  margin-bottom: 24px;
-
+.text__lead__item {
   font-size: 24px;
   line-height: 34px;
-}
-
-.lead-text p:last-of-type {
-  margin-bottom: 0;
 }
 
 .factoid {
   display: flex;
   flex-direction: column;
-}
 
-.factoid img {
-  height: auto;
-  margin-bottom: 8px;
-}
-
-.factoid p {
   font-size: 14px;
   line-height: 18px;
 }
 
-.factoid p:first-of-type {
+.factoid__img {
+  margin-bottom: 8px;
+}
+
+.factoid__heading {
   margin-bottom: 0;
 
+  font-size: 14px;
   font-weight: 800;
+  line-height: 18px;
+}
+
+.factoid__description {
+  margin-bottom: 0;
+
+  font-size: 14px;
+  line-height: 18px;
 }
 
 
 /* Овцы болеют гриппом, который не опасен для человека */
 
-.text-two-columns {
+.text__basic__two-columns {
   display: flex;
-
-  margin-bottom: 44px;
 }
 
-.basic-text-two-columns {
-  display: flex;
-  flex-direction: column;
-
-  justify-content: flex-start;
-}
-
-.important-text {
-  width: 100%;
-  height: auto;
-
-  border-radius: 12px;
-  background: linear-gradient(180deg, #6190FF 0%, #BFE8FE 126.33%);
-}
-
-.important-text p {
+.text__important {
+  margin-top: 44px;
   padding: 32px 44px 64px 24px;
 
   color: #fff;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #6190FF 0%, #BFE8FE 126.33%);
 
   font-size: 24px;
   line-height: 34px;
@@ -179,34 +176,63 @@ nav {
 
 /* Фермеры защищают поголовье от эпидемии */
 
-.basic-text {
+.text__basic {
   display: flex;
   flex-direction: column;
 }
 
-/* Футер */
+.factoid__source {
+  margin-top: 2px;
 
-footer {
-  display: flex;
+  color: #AAAAAA;
 
-  margin-top: 104px;
-
-  align-items: center;
-  justify-content: space-between;
+  font-size: 12px;
+  line-height: 16px;
 }
 
-footer div span:first-of-type {
+
+/* Футер */
+
+.footer {
+  margin-bottom: 24px;
+}
+
+.footer__inner {
+  display: flex;
+
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+
+  align-items: center;
+}
+
+.copyright {
   margin-right: 77px;
 }
 
-footer div span:last-of-type {
-  margin-left: 24px;
+.adress, .social-media {
+  display: flex;
 }
 
-footer .social-media img {
+.adress {
+  flex-grow: 1;
+}
+
+.adress__item {
+  margin-right: 24px;
+}
+
+.social-media__item {
   margin-right: 12px;
+
+  border-radius: 0;
 }
 
-footer .social-media img:last-of-type {
+.social-media__item:last-of-type {
   margin-right: 0;
+}
+
+.social-media__item:hover {
+  color: #6190FF;
 }

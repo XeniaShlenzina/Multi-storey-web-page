@@ -7,25 +7,37 @@
   <link rel="stylesheet" href="stylesheets/styles.css">
 </head>
 <body>
-  <nav class="section">
+  <header class="header">
     <div class="container">
-      <div class="grid">
-        <ul class="grid__col grid__col_12 menu">
-          <li><a class="company__logo" href="#">Вязань</a></li>
-          <li><a class="menu__item" href="#">Одежда</a></li>
-          <li><a class="menu__item" href="#">Домашний текстиль</a></li>
-          <li><a class="menu__item" href="#">О фабрике</a></li>
-          <li><a class="menu__item active" href="#">Блог</a></li>
-          <li class="company__phone__number"><a href="#">+7 900 123-45-76</a></li>
-        </ul>
+      <div class="header__inner">
+        <a class="header__logo" href="#">Вязань</a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Одежда</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Домашний текстиль</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">О фабрике</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link active" href="#">Блог</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="header__phone" href="#">+7 900 123-45-76</a>
       </div>
     </div>
-  </nav>
+  </header>
 
-  <section class="section cover__image">
+  <section class="section">
     <div class="container">
       <div class="grid">
-        <img class="grid__col grid__col_12" src="img/cover-image.jpg" alt="Обложка статьи">
+        <div class="grid__col grid__col_12">
+          <img src="img/cover-image.jpg" alt="Обложка статьи">
+        </div>
       </div>
     </div>
   </section>
@@ -33,82 +45,99 @@
   <section class="section">
     <div class="container">
       <div class="grid">
-          <div class="grid__col grid__col_8 lead-text">
+        <div class="grid__col grid__col_8 text__lead">
+          <p class="text__lead__item">
+            Штамм гриппа, которым болеют овцы, существует. Он не передается людям и умирает при правильной обработке шерсти. Даже если овечка заболела, пока ее шерсть превратится в свитер, все вирусы и бактерии успеют умереть
+          </p>
+          <p class="text__lead__item">
+            Мы попросили Умара Хасанова рассказать, почему не стоит бояться шерстяных вещей
+          </p>
+        </div>
+        <div class="grid__col grid__col_3 grid__offset-col_1 factoid">
+          <img class="factoid__img" src="img/umar-photo.jpg" alt="Портрет Умара Хасанова">
+          <p class="factoid__heading">Умар Хасанов</p>
+          <p class="factoid__description">
+            Аллерголог, иммунолог. Работает в клинике доказательной медицины «Рассвет»
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid">
+        <div class="grid__col grid__col_8 text__heading">
+          <h1>Овцы болеют гриппом, который не опасен для человека</h1>
+        </div>
+        <div class="text__basic__two-columns">
+          <div class="grid__col grid__col_6 text__basic__column">
             <p>
-              Штамм гриппа, которым болеют овцы, существует. Он не передается людям и умирает при правильной обработке шерсти. Даже если овечка заболела, пока ее шерсть превратится в свитер, все вирусы и бактерии успеют умереть
+              Овцы болеют вирусом парагриппа 3 крупного рогатого скота (BPIV-3). Они заражаются от коров и быков. Вирус передается по воздуху и через выделения из носа.
             </p>
             <p>
-              Мы попросили Умара Хасанова рассказать, почему не стоит бояться шерстяных вещей
+              У телят, ягнят и козлят инфекция обычно протекает скрыто. Иногда проявляются симптомы: слезотечение, серозные выделения из носа, одышка и кашель. У некоторых животных может развиться пневмония.
             </p>
           </div>
-
-          <div class="grid__col grid__col_3 grid__offset-col_1 factoid">
-            <img src="img/umar-photo.jpg" alt="Портрет Умара Хасанова">
-            <p>Умар Хасанов</p>
+          <div class="grid__col grid__col_6 text__basic__column">
             <p>
-              Аллерголог, иммунолог. Работает в клинике доказательной медицины «Рассвет»
+              Неосложненная инфекция вируса парагриппа проходит за 3-4 дня,после чего животное полностью поправляется.
+            </p>
+            <p>
+              Вакцина от BPIV-3, которую используют для прививки телят, не показала свою эффективность в исследованиях с овцами. Она лишь незначительно облегчила симптомы болезни.
             </p>
           </div>
+        </div>
+        <div class="grid__col grid__col_12">
+          <p class="text__important">
+            В отличие от вируса парагриппа человека 3 (HPIV-3), вирус парагриппа крупного рогатого скота 3 плохо передается человеку и не вызывает у него болезни.
+          </p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section>
-    <h1>Овцы болеют гриппом, который не опасен для человека</h1>
-    <div class="text-two-columns">
-      <div class="basic-text-two-columns">
-        <p>
-          Овцы болеют вирусом парагриппа 3 крупного рогатого скота (BPIV-3). Они заражаются от коров и быков. Вирус передается по воздуху и через выделения из носа.
-        </p>
-        <p>
-          У телят, ягнят и козлят инфекция обычно протекает скрыто. Иногда проявляются симптомы: слезотечение, серозные выделения из носа, одышка и кашель. У некоторых животных может развиться пневмония.
-        </p>
+  <section class="section">
+    <div class="container">
+      <div class="grid">
+        <div class="grid__col grid__col_8 text__heading">
+          <h1>Фермеры защищают поголовье от эпидемии</h1>
+        </div>
+        <div class="grid__col grid__col_8">
+          <div class="text__basic">
+            <p>
+              Чтобы защитить овечек от болезни, фермеры соблюдают ветеренарно-санитарные правила, стараются диагностировать заболевание на ранней стадии и дезинфицируют территорию фермы.
+            </p>
+            <p>
+              Если животные все-таки заболели, то их изолируют в специальных загонах. Ферму закрывают на ввоз и вывоз животных, на въезд посторонних людей. Помещения и территорию дезинфицируют. Ветеринары лечат овечек. Снимают ограничения через 14 дней после последнего случая выздоровления больного животного.
+            </p>
+          </div>
+        </div>
+        <div class="grid__col grid__col_3 grid__offset-col_1 factoid">
+          <img class="factoid__img" src="img/vaccination-photo.jpg" alt="Ветеринар вакцинирует овцу">
+          <p class="factoid__description">
+            Овец не прививают от BPIV-3, но вакцинируют от других вирусных и бактериальных инфекций.
+          </p>
+          <p class="factoid__source">Источник: Farming UK</p>
+        </div>
       </div>
-      <div class="basic-text-two-columns">
-        <p>
-          Неосложненная инфекция вируса парагриппа проходит за 3-4 дня, после чего животное полностью поправляется.
-        </p>
-        <p>
-          Вакцина от BPIV-3, которую используют для прививки телят, не показала свою эффективность в исследованиях с овцами. Она лишь незначительно облегчила симптомы болезни.
-        </p>
-      </div>
-    </div>
-    <div class="important-text">
-      <p>
-        В отличие от вируса парагриппа человека 3 (HPIV-3), вирус парагриппа крупного рогатого скота 3 плохо передается человеку и не вызывает у него болезни.
-      </p>
     </div>
   </section>
 
-  <section>
-    <h1>Фермеры защищают поголовье от эпидемии</h1>
-    <div class="basic-text">
-      <p>
-        Чтобы защитить овечек от болезни, фермеры соблюдают ветеренарно-санитарные правила, стараются диагностировать заболевание на ранней стадии и дезинфицируют территорию фермы.
-      </p>
-      <p>
-        Если животные все-таки заболели, то их изолируют в специальных загонах. Ферму закрывают на ввоз и вывоз животных, на въезд посторонних людей. Помещения и территорию дезинфицируют. Ветеринары лечат овечек. Снимают ограничения через 14 дней после последнего случая выздоровления больного животного.
-      </p>
-    </div>
-    <div class="factoid">
-      <img src="img/umar-photo.jpg" alt="Портрет Умара Хасанова">
-      <p>Умар Хасанов</p>
-      <p>
-        Аллерголог, иммунолог. Работает в клинике доказательной медицины «Рассвет»
-      </p>
-    </div>
-  </section>
-
-  <footer>
-    <div>
-      <span>© 2008...2021 Вязань</span>
-      <span>Рязань, Окский проезд, 27</span>
-      <span>+7 900 123-45-76</span>
-    </div>
-    <div class="social-media">
-      <img src="img/instagram.svg" alt="Инстаграм">
-      <img src="img/facebook.svg" alt="Фейсбук">
-      <img src="img/vk.svg" alt="Вконтакте">
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="copyright">© 2008...2021 Вязань</span>
+        <ul class="adress">
+          <li class="adress__item">Рязань, Окский проезд, 27</li>
+          <li class="adress__item">+7 900 123-45-76</li>
+        </ul>
+        <div class="social-media">
+          <img class="social-media__item" src="img/instagram.svg" alt="Инстаграм">
+          <img class="social-media__item" src="img/facebook.svg" alt="Фейсбук">
+          <img class="social-media__item" src="img/vk.svg" alt="Вконтакте">
+        </div>
+      </div>
     </div>
   </footer>
 </body>
