@@ -61,10 +61,12 @@ a {
 
 /* Навигация */
 
+.header {
+  margin: 12px 0 64px;
+}
+
 .header__inner {
   display: flex;
-
-  margin: 16px 0 64px;
 
   font-family: 'Manrope', sans-serif;
   font-size: 16px;
@@ -224,6 +226,10 @@ a {
 
 .adress__item {
   margin-right: 24px;
+}
+
+.adress__item:last-of-type {
+  margin-right: 0;
 }
 
 .social-media__item {
